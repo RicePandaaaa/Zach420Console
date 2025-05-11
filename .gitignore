@@ -173,3 +173,11 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Node modules
+node_modules/
+
+# Tailwind CSS
+tailwind.config.js
+tailwind.config.ts
+
