@@ -41,6 +41,8 @@ ALLOWED_HOSTS = []
 
 AUTH_USER_MODEL = 'authentication.CustomUser'
 
+SOCIALACCOUNT_LOGIN_ON_GET = True
+
 
 # Application definition
 

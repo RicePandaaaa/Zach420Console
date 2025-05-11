@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
 @theme {
-  /* Define your custom colors under the --color-* namespace */
   --color-zach-maroon: #800000; /* TAMU Maroon */
-
-  /* You can add other theme customizations here if needed: */
-  /* --font-sans: "Inter", ui-sans-serif, system-ui; */
 }
