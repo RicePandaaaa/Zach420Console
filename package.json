@@ -1,0 +1,24 @@
+{
+  "name": "zach420console",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:css": "npx @tailwindcss/cli -i ./zach_console/static/src/styles.css -o ./zach_console/static/dist/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RicePandaaaa/Zach420Console.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RicePandaaaa/Zach420Console/issues"
+  },
+  "homepage": "https://github.com/RicePandaaaa/Zach420Console#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.6",
+    "tailwindcss": "^4.1.6"
+  }
+}

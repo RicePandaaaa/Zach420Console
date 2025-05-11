@@ -1,0 +1,40 @@
+{% load static %}
+{% load socialaccount %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZACH 420 Console - Login</title>
+    <link rel="stylesheet" href="{% static 'dist/styles.css' %}">
+</head>
+<body class="bg-zach-maroon flex flex-col items-center justify-center min-h-screen font-sans text-white p-4">
+
+    <header class="mb-12 text-center">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold">ZACH 420 Console</h1>
+    </header>
+
+    <main class="w-full max-w-md space-y-10">
+
+        <section id="student-section">
+            <h2 class="text-xl font-semibold mb-3 text-center">Students:</h2>
+            <a href="#" class="block w-full bg-white hover:bg-gray-100 text-zach-maroon font-semibold py-3 px-4 rounded-md shadow-md text-center transition duration-150 ease-in-out disabled:opacity-50" aria-disabled="true" onclick="alert('View PT Availability - Future Functionality'); return false;">
+                View PT Availability
+            </a>
+        </section>
+
+        <section id="peer-teacher-section">
+            <h2 class="text-xl font-semibold mb-3 text-center">Peer Teachers:</h2>
+            <a href="{% provider_login_url 'google' %}" class="block w-full bg-white hover:bg-gray-100 text-zach-maroon font-semibold py-3 px-4 rounded-md shadow-md text-center transition duration-150 ease-in-out">
+                Sign in with your TAMU NetID
+            </a>
+        </section>
+    </main>
+
+    <footer class="mt-12 text-center text-sm text-gray-300">
+        <p>&copy; {% now "Y" %} ZACH 420. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
