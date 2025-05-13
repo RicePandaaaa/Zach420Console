@@ -47,6 +47,9 @@ SOCIALACCOUNT_LOGIN_ON_GET = True
 # Application definition
 
 INSTALLED_APPS = [
+    'dashboard',
+    'availability',
+    
     'allauth',
     'allauth.account',
     'allauth.socialaccount',

@@ -19,7 +19,7 @@
 
         <section id="student-section">
             <h2 class="text-xl font-semibold mb-3 text-center">Students:</h2>
-            <a href="#" class="block w-full bg-white hover:bg-gray-100 text-zach-maroon font-semibold py-3 px-4 rounded-md shadow-md text-center transition duration-150 ease-in-out disabled:opacity-50" aria-disabled="true" onclick="alert('View PT Availability - Future Functionality'); return false;">
+            <a href="{% url 'availability:pt_availability_page' %}" class="block w-full bg-white hover:bg-gray-100 text-zach-maroon font-semibold py-3 px-4 rounded-md shadow-md text-center transition duration-150 ease-in-out disabled:opacity-50">
                 View PT Availability
             </a>
         </section>
