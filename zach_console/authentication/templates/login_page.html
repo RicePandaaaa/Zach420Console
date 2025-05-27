@@ -15,6 +15,17 @@
         <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold">ZACH 420 Console</h1>
     </header>
 
+    <!-- Error Messages Banner -->
+    {% if messages %}
+        <div class="w-full max-w-md mb-6">
+            {% for message in messages %}
+                <div class="bg-zach-maroon-light border-2 px-6 py-4 rounded-lg shadow-lg mb-4">
+                    <p class="text-sm font-semibold text-center">{{ message }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+
     <main class="w-full max-w-md space-y-10">
 
         <section id="student-section">
