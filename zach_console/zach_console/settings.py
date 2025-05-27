@@ -24,8 +24,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Django allauth config
 SITE_ID = 1
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
-ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_AUTHENTICATION_METHOD = 'email'
+ACCOUNT_LOGIN_METHODS = ['email']
+ACCOUNT_SIGNUP_FIELDS = ['email*', 'username']
 
 
 # Quick-start development settings - unsuitable for production
@@ -42,6 +42,9 @@ ALLOWED_HOSTS = []
 AUTH_USER_MODEL = 'authentication.CustomUser'
 
 SOCIALACCOUNT_LOGIN_ON_GET = True
+
+SOCIALACCOUNT_ADAPTER = 'authentication.adapters.SocialAccountAdapter'
+
 
 
 # Application definition

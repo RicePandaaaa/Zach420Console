@@ -1,0 +1,40 @@
+{% load static %}
+{% load socialaccount %}
+
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Denied</title>
+    <link rel="stylesheet" href="{% static 'dist/styles.css' %}">
+</head>
+<body class="bg-zach-maroon grid grid-rows-3 h-screen font-sans text-white m-0 p-0"> {# Added m-0 p-0 to body #}
+
+    {# Top 1/3: "Access Denied" Header (grid-row-1) #}
+    <div class="w-full flex items-center justify-center p-4">
+        <header class="text-center">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-red-500">Access Denied</h1>
+        </header>
+    </div>
+
+    {# Middle 1/3: Error Message and Button (grid-row-2) #}
+    <div class="w-full flex items-center justify-center p-4">
+        <main class="w-full max-w-md bg-white text-zach-maroon p-8 rounded-lg shadow-md text-center">
+            <p class="text-lg mb-4">The email address <span class="font-bold">{{ email }}</span> is not a valid TAMU email address.</p>
+            <p class="text-lg mb-6">Only emails ending with `@tamu.edu` are allowed to sign in as Peer Teachers.</p>
+            <a href="{% url 'authentication:custom_login_page' %}" class="inline-block bg-zach-maroon hover:bg-red-700 text-white font-semibold py-3 px-4 rounded-md shadow-md transition duration-150 ease-in-out">
+                Go back to Login
+            </a>
+        </main>
+    </div>
+
+    {# Bottom 1/3: Footer (grid-row-3) #}
+    <div class="w-full flex items-center justify-center p-4">
+        <footer class="text-center text-sm text-gray-300">
+            <p>&copy; {% now "Y" %} Anthony Pham. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
